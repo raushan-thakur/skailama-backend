@@ -114,13 +114,14 @@ const updateEvent = async (eventId, data) => {
   if (
     startDate && new Date(startDate).getTime() !== event.startAtUTC.getTime()
   ) {
+
     logs.push({
       field: "startAtUTC",
       oldValue: event.startAtUTC,
-      newValue: finalStart.toDate(),
+      newValue: new Date(startDate),
       updatedAt: new Date(),
     });
-    event.startAtUTC = finalStart.toDate();
+    event.startAtUTC = new Date(startDate);
   }
 
   if (endDate && new Date(endDate).getTime() !== event.endAtUTC.getTime()
@@ -128,10 +129,10 @@ const updateEvent = async (eventId, data) => {
     logs.push({
       field: "endAtUTC",
       oldValue: event.endAtUTC,
-      newValue: finalEnd.toDate(),
+      newValue: new Date(endDate),
       updatedAt: new Date(),
     });
-    event.endAtUTC = finalEnd.toDate();
+    event.endAtUTC = new Date(endDate);
   }
 
   if (logs.length) {
