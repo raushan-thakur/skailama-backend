@@ -11,7 +11,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://skailama-frontend.vercel.app",
+  "https://skailama-frontend-beige.vercel.app",
 ];
 
 app.use(cors({
