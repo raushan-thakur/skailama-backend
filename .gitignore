@@ -1,0 +1,65 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build and output
+dist/
+build/
+coverage/
+
+# Logs
+logs/
+*.log
+debug.log
+error.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Uploads or generated files
+uploads/
+public/uploads/
+tmp/
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional - ignore test snapshots or mocks
+__snapshots__/
+__mocks__/
+
+# Ignore local database dumps or backups
+*.dump
+*.bak
+*.sql
+*.sqlite
+mongo-data/
